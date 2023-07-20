@@ -52,8 +52,8 @@ nav button:hover {
 
 .hero-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start; /* Adjust alignment to the top */
+    justify-content: space-between; /* Adjust to separate hero-text and hero-image */
     padding: 20px;
 }
 
@@ -73,7 +73,7 @@ nav button:hover {
 }
 
 .hero-image {
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    height: 600px;
     background-color: #fff; /* Replace this with your actual image */
 }
