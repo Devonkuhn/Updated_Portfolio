@@ -11,7 +11,7 @@ nav {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Adjust to separate hamburger and buttons */
     padding-right: 16px;
 }
 
@@ -50,6 +50,15 @@ nav button:hover {
     background-color: #333333;
 }
 
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: flex; /* Show the hamburger menu at 600px or less */
+  }
+  .nav-links {
+    display: none; /* Hide the nav links at 600px or less */
+  }
+}
+
 .hero-container {
     display: flex;
     align-items: flex-start; /* Adjust alignment to the top */
@@ -58,17 +67,18 @@ nav button:hover {
 }
 
 .hero-text {
+    flex: 1;
     text-align: left;
     color: #fff;
 }
 
 .hero-text h1 {
-    font-size: 150px;
+    font-size: 10vw; /* Scale with viewport width */
     margin: 0;
 }
 
 .hero-text h2 {
-    font-size: 50px;
+    font-size: 5vw; /* Scale with viewport width */
     margin: 0;
 }
 
@@ -76,4 +86,5 @@ nav button:hover {
     width: 50%;
     height: 600px;
     background-color: #fff; /* Replace this with your actual image */
+
 }
