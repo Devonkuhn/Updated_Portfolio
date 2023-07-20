@@ -1,5 +1,7 @@
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -48,12 +50,30 @@ nav button:hover {
     background-color: #333333;
 }
 
-@media (max-width: 600px) {
-    .nav-links {
-        display: none;
-    }
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
 
-    .hamburger-menu {
-        display: flex;
-    }
+.hero-text {
+    text-align: left;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 150px;
+    margin: 0;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero-image {
+    width: 200px;
+    height: 200px;
+    background-color: #fff; /* Replace this with your actual image */
 }
