@@ -11,7 +11,7 @@ nav {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Adjust to separate hamburger and buttons */
+    justify-content: flex-end;
     padding-right: 16px;
 }
 
@@ -50,35 +50,26 @@ nav button:hover {
     background-color: #333333;
 }
 
-@media (max-width: 600px) {
-  .hamburger-menu {
-    display: flex; /* Show the hamburger menu at 600px or less */
-  }
-  .nav-links {
-    display: none; /* Hide the nav links at 600px or less */
-  }
-}
-
 .hero-container {
     display: flex;
-    align-items: flex-start; /* Adjust alignment to the top */
-    justify-content: space-between; /* Adjust to separate hero-text and hero-image */
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     padding: 20px;
 }
 
 .hero-text {
     flex: 1;
-    text-align: left;
     color: #fff;
 }
 
 .hero-text h1 {
-    font-size: 10vw; /* Scale with viewport width */
+    font-size: 60px;
     margin: 0;
 }
 
 .hero-text h2 {
-    font-size: 5vw; /* Scale with viewport width */
+    font-size: 36px;
     margin: 0;
 }
 
@@ -86,5 +77,37 @@ nav button:hover {
     width: 50%;
     height: 600px;
     background-color: #fff; /* Replace this with your actual image */
+}
 
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        width: 100%;
+        min-height: 300px; /* Provide a minimum height */
+    }
 }
