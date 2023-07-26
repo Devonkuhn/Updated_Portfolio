@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-    height: 100px;
+    height: 120px;
     width: 100%;
     border: 5px solid #1e1e1e;
     box-sizing: border-box;
@@ -55,8 +55,8 @@ nav button:hover {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 0px;
+    margin-top: 90px;
 }
 
 @font-face {
@@ -67,12 +67,13 @@ nav button:hover {
 .hero-text {
     flex: 1;
     color: red;
+    margin-left: 16px;
 }
 
 .hero-text h1 {
     font-family: Wheaton;
-    font-size: 150px;
-    line-height: 125px;
+    font-size: 200px;
+    line-height: 175px;
     margin: 0;
 }
 
@@ -83,7 +84,8 @@ nav button:hover {
 
 .hero-image {
     width: 50%;
-    height: 600px;
+    height: 1250px;
+    border: 5px solid #1e1e1e;
 }
 
 @media (max-width: 1765px) {
