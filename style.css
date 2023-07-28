@@ -52,8 +52,8 @@ nav button:hover {
 
 .hero-container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     padding: 0px;
     margin-top: 90px;
@@ -67,7 +67,7 @@ nav button:hover {
 .hero-text {
     flex: 1;
     color: red;
-    margin-left: 16px;
+    text-align: center;
 }
 
 .hero-text h1 {
@@ -82,9 +82,30 @@ nav button:hover {
     margin: 0;
 }
 
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.hero-button {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #ff0000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+.hero-button:hover {
+    background-color: #333333;
+}
+
 .hero-image {
-    width: 50%;
-    height: 1250px;
+    width: 1150px;
+    height: 1000px;
     border: 5px solid #1e1e1e;
 }
 
@@ -114,6 +135,15 @@ nav button:hover {
         min-height: 400px;
         height: 600px;
         max-width: 800px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .hero-button {
+        margin: 10px 0;
     }
 }
 
@@ -151,6 +181,14 @@ nav button:hover {
         max-width: 600px;
 
     }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-button {
+        margin: 10px 0;
+    }
 }
 
 @media (max-width: 615px) {
@@ -186,5 +224,13 @@ nav button:hover {
         min-height: 300px; /* Provide a minimum height */
         max-width: 600px;
 
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-button {
+        margin: 10px 0;
     }
 }
