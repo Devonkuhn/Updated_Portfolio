@@ -1,18 +1,42 @@
 body {
-    background-color: black;
+    background-color: #0D0D0D;
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    color: red;
+    font-family: Wheaton;
+    font-size: 200px;
+    line-height: 175px;
+    margin: 0;
+    letter-spacing: -5px;
+}
+
+h2 {
+    font-family: Creepster;
+    -webkit-text-stroke: 1px white;
+    color: #000000;
+    font-size: 100px;
+    margin: 0;
 }
 
 nav {
     height: 120px;
     width: 100%;
     border: 5px solid #1e1e1e;
+    background-color: #000000;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-right: 16px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
 }
 
 .hamburger-menu {
@@ -56,7 +80,7 @@ nav button:hover {
     align-items: center;
     justify-content: space-between;
     padding: 0px;
-    margin-top: 90px;
+    margin-top: 35px;
 }
 
 @font-face {
@@ -71,24 +95,7 @@ nav button:hover {
 
 .hero-text {
     flex: 1;
-    color: red;
     text-align: center;
-}
-
-.hero-text h1 {
-    font-family: Wheaton;
-    font-size: 200px;
-    line-height: 175px;
-    margin: 0;
-    letter-spacing: -5px;
-}
-
-.hero-text h2 {
-    font-family: Creepster;
-    -webkit-text-stroke: 1px white;
-    color: #000000;
-    font-size: 100px;
-    margin: 0;
 }
 
 .hero-buttons {
@@ -123,7 +130,7 @@ nav button:hover {
 }
 
 .hero-image {
-    width: 1150px;
+    width: 1550px;
     height: 1000px;
     border: 5px solid #1e1e1e;
 }
