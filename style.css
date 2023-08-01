@@ -64,6 +64,11 @@ nav button:hover {
     src: url('assets/fonts/wheaton\ capitals.otf');
 }
 
+@font-face {
+    font-family: 'Creepster';
+    src: url('assets/fonts/CreepsterCaps-Regular.ttf');
+}
+
 .hero-text {
     flex: 1;
     color: red;
@@ -75,10 +80,14 @@ nav button:hover {
     font-size: 200px;
     line-height: 175px;
     margin: 0;
+    letter-spacing: -5px;
 }
 
 .hero-text h2 {
-    font-size: 36px;
+    font-family: Creepster;
+    -webkit-text-stroke: 1px white;
+    color: #000000;
+    font-size: 100px;
     margin: 0;
 }
 
@@ -91,12 +100,22 @@ nav button:hover {
 .hero-button {
     display: inline-block;
     color: #ffffff;
-    background-color: #ff0000;
-    border: none;
+    background-color: #000000;
+    border: 3px solid white;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 30px;
+    font-weight: bold;
     cursor: pointer;
     margin: 10px 10px;
+    border-radius: 25px;
+    width: 625px;
+    height: 64px;
+    box-shadow: 7px 9px white
+}
+
+.hero-button:active {
+    box-shadow: none;
+    transform: translateY(9px) translateX(7px);
 }
 
 .hero-button:hover {
