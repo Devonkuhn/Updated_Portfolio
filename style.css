@@ -21,6 +21,7 @@ h2 {
     margin: 0;
 }
 
+
 nav {
     height: 120px;
     width: 100%;
@@ -93,6 +94,11 @@ nav button:active {
     justify-content: space-between;
     padding: 0px;
     margin-top: 35px;
+}
+
+@font-face {
+    font-family: 'Anon';
+    src: url('assets/fonts/Anonymous_Pro.ttf');
 }
 
 @font-face {
@@ -169,8 +175,8 @@ nav button:active {
 
 .home-about-pic,
 .my-goal-pic {
-    width: 1550px;
-    height: 1000px;
+    width: 900px;
+    height: 900px;
     border: 5px solid #1e1e1e;
     margin-top: 10px;
 }
@@ -201,6 +207,10 @@ nav button:active {
 .my-goal-button:hover {
     background-color: #333333;
 }
+
+.home-about-text {
+    margin-left: 200px;
+ }
 
 @media (max-width: 1765px) {
 
