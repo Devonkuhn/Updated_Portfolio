@@ -83,6 +83,7 @@ nav button {
     cursor: pointer;
     margin: 16px;
     box-shadow: 7px 9px white;
+    font-family: Wheaton;
 }
 
 nav button:hover {
@@ -222,7 +223,7 @@ nav button:active {
     font-weight: 900;
  }
 
-@media (max-width: 1765px) {
+@media (max-width: 1300px) {
 
     .hero-container {
         flex-direction: column;
@@ -235,19 +236,19 @@ nav button:active {
     }
 
     .hero-text h1 {
-        font-size: 145px;
-        line-height: 125px;
+        font-size: 75px;
+        line-height: 65px;
     }
 
     .hero-text h2 {
-        font-size: 24px;
+        font-size: 45px;
     }
 
     .hero-image {
         width: 100%;
         min-height: 400px;
-        height: 600px;
-        max-width: 800px;
+        height: 500px;
+        max-width: 700px;
     }
 
     .hero-buttons {
@@ -260,7 +261,7 @@ nav button:active {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .hamburger-menu {
         display: flex;
     }
@@ -304,7 +305,7 @@ nav button:active {
     }
 }
 
-@media (max-width: 615px) {
+@media (max-width: 675px) {
     .hamburger-menu {
         display: flex;
     }
