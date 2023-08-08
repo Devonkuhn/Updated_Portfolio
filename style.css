@@ -7,20 +7,38 @@ body {
 h1 {
     color: red;
     font-family: Wheaton;
-    font-size: 175px;
-    line-height: 150px;
+    font-size: 100px;
+    line-height: 85px;
     margin: 0;
-    letter-spacing: -5px;
+    letter-spacing: px;
 }
 
 h2 {
     font-family: Creepster;
     -webkit-text-stroke: 1px white;
     color: #000000;
-    font-size: 100px;
+    font-size: 65px;
     margin: 0;
 }
 
+h3 {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    font-family: Creepster;
+    -webkit-text-stroke: 1px white;
+    color: #000000;
+    font-size: 75px;
+    margin: 0;
+}
+
+p {
+    font-family: Anon;
+    font-size: 35px;
+    color: #ffffff;
+    margin-top: -3px;
+    margin-bottom: 16px;
+}
 
 nav {
     height: 120px;
@@ -32,17 +50,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-right: 16px;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-    padding-left: 16px;
-    font-family: Creepster;
-    -webkit-text-stroke: 3px white;
-    color: #000000;
-    font-size: 75px;
-    margin: 0;
 }
 
 .hamburger-menu {
@@ -147,8 +154,8 @@ nav button:active {
 }
 
 .hero-image {
-    width: 1550px;
-    height: 1000px;
+    width: 900px;
+    height: 550px;
     border: 5px solid #1e1e1e;
     margin-top: 10px;
 }
@@ -160,23 +167,13 @@ nav button:active {
     align-items: center;
     justify-content: space-between;
     padding: 0px;
-    margin-top: 35px;
-}
-
-.home-about-container h1,
-.my-goal-container h1 {
-    color: red;
-    font-family: Wheaton;
-    font-size: 175px;
-    line-height: 150px;
-    margin: 0;
-    letter-spacing: -5px;
+    margin-top: 100px;
 }
 
 .home-about-pic,
 .my-goal-pic {
-    width: 900px;
-    height: 900px;
+    width: 600px;
+    height: 600px;
     border: 5px solid #1e1e1e;
     margin-top: 10px;
 }
@@ -192,7 +189,7 @@ nav button:active {
     font-weight: bold;
     cursor: pointer;
     margin: 15px 10px;
-    width: 625px;
+    width: 600px;
     height: 64px;
     box-shadow: 7px 9px white;
 }
@@ -209,7 +206,15 @@ nav button:active {
 }
 
 .home-about-text {
-    margin-left: 200px;
+    width: 600px;
+ }
+
+ .my-goal-text {
+    width: 600px;
+ }
+
+ #my-goal-cta {
+    font-weight: 900;
  }
 
 @media (max-width: 1765px) {
