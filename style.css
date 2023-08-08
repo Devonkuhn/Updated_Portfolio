@@ -223,43 +223,6 @@ nav button:active {
     font-weight: 900;
  }
 
-@media (max-width: 1300px) {
-
-    .hero-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-text {
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .hero-text h1 {
-        font-size: 75px;
-        line-height: 65px;
-    }
-
-    .hero-text h2 {
-        font-size: 45px;
-    }
-
-    .hero-image {
-        width: 100%;
-        min-height: 400px;
-        height: 500px;
-        max-width: 700px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .hero-button {
-        margin: 10px 0;
-    }
-}
 
 @media (max-width: 1000px) {
     .hamburger-menu {
@@ -280,64 +243,32 @@ nav button:active {
         max-width: 100%;
     }
 
-    .hero-text h1 {
-        font-size: 100px;
-        line-height: 85px;
-    }
-
-    .hero-text h2 {
-        font-size: 36px;
-    }
-
-    .hero-image {
-        width: 100%;
-        min-height: 300px; /* Provide a minimum height */
-        max-width: 600px;
-
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .hero-button {
-        margin: 10px 0;
-    }
-}
-
-@media (max-width: 675px) {
-    .hamburger-menu {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .hero-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-text {
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .hero-text h1 {
+    h1 {
         font-size: 60px;
         line-height: 55px;
     }
 
-    .hero-text h2 {
+    h2 {
         font-size: 36px;
+    }
+
+    p {
+        font-size: 22px;
     }
 
     .hero-image {
         width: 100%;
-        min-height: 300px; /* Provide a minimum height */
-        max-width: 600px;
+        height: 500px; /* Provide a minimum height */
+        max-width: 450px;
 
+    }
+
+    .home-about-pic,
+    .my-goal-pic {
+        height: 450px;
+        width: 450px;
+        border: 5px solid #1e1e1e;
+        margin-top: 10px;
     }
 
     .hero-buttons {
@@ -346,5 +277,19 @@ nav button:active {
 
     .hero-button {
         margin: 10px 0;
+        max-width: 450px;
+    }
+
+    .home-about-text {
+        width: 450px;
+    }
+    
+    .my-goal-text {
+        width: 450px;
+    }
+
+    .home-about-button,
+    .my-goal-button {
+        width: 450px;
     }
 }
