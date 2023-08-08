@@ -141,7 +141,10 @@ nav button:active {
     margin: 15px 10px;
     width: 625px;
     height: 64px;
-    box-shadow: 7px 9px white
+    box-shadow: 7px 9px white;
+    font-family: Anon;
+    font-style: italic;
+    
 }
 
 .hero-button:active {
@@ -192,6 +195,8 @@ nav button:active {
     width: 600px;
     height: 64px;
     box-shadow: 7px 9px white;
+    font-family: Anon;
+    font-style: italic;
 }
 
 .home-about-button:active,
